@@ -1,5 +1,5 @@
 #######################################################################################
-# Analysis for Manuscript: A 2x2 factorial randomized controlled trial of rhetorical training and s...
+# Analysis 1 for Manuscript: A 2x2 factorial randomized controlled trial of rhetorical training and s...
 #######################################################################################
 #setting environment -------------------------------------------------------------------
 #remove all objects and then check
