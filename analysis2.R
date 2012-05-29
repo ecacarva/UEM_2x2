@@ -36,15 +36,20 @@ options(RCurlOptions = list(capath = system.file("CurlSSL", "cacert.pem", packag
 uem.data <- getURL("https://docs.google.com/spreadsheet/pub?hl=pt&hl=pt&key=0ArSWDBjbC6hHdFRMeVIwUENiNkZZcDlYSVVXM1lPOGc&single=true&gid=0&output=csv")
 data2<-read.csv(textConnection(uem.data), header=T)
 attach(data2)
+detach(data2)
+
 # Data for Kappa
 uem.data2 <- getURL("https://docs.google.com/spreadsheet/pub?key=0ArSWDBjbC6hHdDNxWkNGTHBUZnVScE13clhieEVRcmc&single=true&gid=1&output=csv")
 data3<-read.csv(textConnection(uem.data2), header=T)
 attach(data3)
+detach(data3)
 
 # Normality Test
+attach(data2)
+detach(data2)
 summary(data2)
 dim(data2)
- 
+
 kurtosis(Q1) - 3       # apply the kurtosis function
 kurtosis(Q2) - 3
 kurtosis(Q3) - 3
@@ -87,7 +92,10 @@ ad.test(Q11)
 ad.test(Q12)
 ad.test(Q13)
 
+detach(data2)
+
 # Kappa Test
+attach(data3)
 q1<-data.frame(Q1,Q1a)
 q2<-data.frame(Q2,Q2a)
 q3<-data.frame(Q3,Q3a)
@@ -116,17 +124,20 @@ kappa2(q11[,1:2], "squared") # predefined set of squared weights
 kappa2(q12[,1:2], "squared") # predefined set of squared weights
 kappa2(q13[,1:2], "squared") # predefined set of squared weights
 
+detach(data3)
+
 # Kruskal-Wallis
-kruskal.test(Q1 ~ Grupos, data= data)
-kruskal.test(Q2 ~ Grupos, data= data)
-kruskal.test(Q3 ~ Grupos, data= data)
-kruskal.test(Q4 ~ Grupos, data= data)
-kruskal.test(Q5 ~ Grupos, data= data)
-kruskal.test(Q6 ~ Grupos, data= data)
-kruskal.test(Q7 ~ Grupos, data= data)
-kruskal.test(Q8 ~ Grupos, data= data)
-kruskal.test(Q9 ~ Grupos, data= data)
-kruskal.test(Q10 ~ Grupos, data= data)
-kruskal.test(Q11 ~ Grupos, data= data)
-kruskal.test(Q12 ~ Grupos, data= data)
-kruskal.test(Q13 ~ Grupos, data= data)
+attach(data2)
+kruskal.test(Q1 ~ Gro, data= data2)
+kruskal.test(Q2 ~ Gro, data= data2)
+kruskal.test(Q3 ~ Gro, data= data2)
+kruskal.test(Q4 ~ Gro, data= data2)
+kruskal.test(Q5 ~ Gro, data= data2)
+kruskal.test(Q6 ~ Gro, data= data2)
+kruskal.test(Q7 ~ Gro, data= data2)
+kruskal.test(Q8 ~ Gro, data= data2)
+kruskal.test(Q9 ~ Gro, data= data2)
+kruskal.test(Q10 ~ Gro, data= data2)
+kruskal.test(Q11 ~ Gro, data= data2)
+kruskal.test(Q12 ~ Gro, data= data2)
+kruskal.test(Q13 ~ Gro, data= data2)
