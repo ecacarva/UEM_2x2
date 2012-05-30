@@ -1,6 +1,9 @@
 #######################################################################################
 # Analysis 1 for Manuscript: A 2x2 factorial randomized controlled trial of rhetorical training and s...
 #######################################################################################
+
+#Ricardo was here
+
 #setting environment -------------------------------------------------------------------
 #remove all objects and then check
 rm(list = ls())
