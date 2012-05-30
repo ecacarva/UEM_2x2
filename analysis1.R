@@ -7,8 +7,6 @@ rm(list = ls())
 ls()
 #dettach all packages
 detach()
-# set workdir
-setwd("C:\\GitHub\\UEM_2x2\\")
 
 # data1=reading the first database (work professor x student)
 # Header for data1 ####################################
