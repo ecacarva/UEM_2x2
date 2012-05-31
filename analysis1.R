@@ -3,6 +3,8 @@
 #######################################################################################
 #setting environment -------------------------------------------------------------------
 #remove all objects and then check
+#remove all objects and then check
+
 rm(list = ls())
 ls()
 #dettach all packages
