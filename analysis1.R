@@ -7,7 +7,12 @@
 
 rm(list = ls())
 ls()
+
 # Adelia
+# Adelia
+# Adelia
+
+
 #dettach all packages
 detach()
 
