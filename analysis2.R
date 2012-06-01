@@ -3,6 +3,10 @@
 #######################################################################################
 #setting environment -------------------------------------------------------------------
 #remove all objects and then check
+
+# Adelia is testing analysis2
+
+
 rm(list = ls())
 ls()
 #dettach all packages
