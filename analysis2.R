@@ -5,7 +5,7 @@
 #remove all objects and then check
 
 # Adelia is testing analysis2
-# Elias testint
+# Elias testing
 
 rm(list = ls())
 ls()
