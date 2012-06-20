@@ -5,9 +5,7 @@
 #######################
 # Adelia was here
 #######################
-#######################
-# Adelia was here
-#######################
+# ELias esteve aqui
 
 #setting environment -------------------------------------------------------------------
 #remove all objects and then check
